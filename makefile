@@ -1,5 +1,4 @@
-ADJUNTO=funciones.c estructuras.c
-SOURCES=main.c $(ADJUNTO)
+SOURCES=main.c
 
 all:
 	gcc $(SOURCES) -std=gnu99 -Wall -lm -g -o main
