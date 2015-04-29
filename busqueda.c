@@ -33,9 +33,7 @@ busqueda(nodo * lista, int (*funcion) ())
 {
     nodo *list = (nodo*) malloc(sizeof(nodo));
     while(lista != NULL)
-    {
-           
-    }
+    {}
 }   
 
 void
