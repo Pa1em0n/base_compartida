@@ -1,4 +1,4 @@
-# Estructuras compartidas
+# Base compartida
 Ejercicio en clase sobre la implementación en grupo de estructuras compartidas
 
 ## Compilación 
