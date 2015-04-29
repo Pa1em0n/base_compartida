@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include "estructuras.h"
 
+int
+indicadora1(cancion * can, char * nombre)
+{
+	if (nombre == can->nombre)
+		return 1;
+	else
+		return 0;
+}
+
 int busca(nodo*n, cancion*elemento)
 {
 	if(n==NULL)
