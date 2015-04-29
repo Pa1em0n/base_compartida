@@ -11,13 +11,24 @@ void leeArchivo(){
         archivo = fopen("base.txt", "wt");
         fclose(archivo);
     }else{
+    	char separador[] = "|";
+    	char *apuntador;
         while (!feof(archivo)){
-            caracter = fgetc(archivo);
+            //caracter = fgetc(archivo);
         	char *linea = readLine(archivo);
-
             if(caracter != '\377'){
-                if(caracter == '|'){
-                    printf("x");
+            
+
+                apuntador = strtok(linea,separador);
+                char *nombre = (*char)malloc(sizeof(char));
+                apuntador = strtok(linea,separador);
+                char *interprete =  (*char)malloc(sizeof(char));
+                apuntador = strtok(linea,separador);
+                char *genero = (*char)malloc(sizeof(char));
+                apuntador = strtok(linea,separador);
+                char *duracion =  (*char)malloc(sizeof(char));
+                apuntador = strtok(linea,separador);
+                char *anio = (*char)malloc(sizeof(char));
                 }
                 else{
                     printf("%c",caracter);
