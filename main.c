@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 	/* code */
 	char entrada;
 	while(1){
-		printf("\n\n\n");
+		//printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		printf("%s\n", "╔================================================╗");
 		printf("║\tHola Bienvenido A Tu Base De Datos\t ║\n");
 		printf("║\t\t\t\t\t\t ║\n");
