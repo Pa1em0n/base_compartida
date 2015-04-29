@@ -1,27 +1,28 @@
 #include "estructuras.h"
 #include <stdlib.h>
+#include <string.h>
 
 int
-indicadora1(cancion * can, char * nombre)
+indicadora1(cancion *can, char *nombre)
 {
-	if (nombre == can->nombre)
+	if (strcmp(nombre,can->nombre) == 1)
 		return 1;
 	else
 		return 0;
 }
 
 int
-indicadora2(cancion * can, char * interprete)
+indicadora2(cancion *can, char *interprete)
 {
-    if(interprete == can->interprete)
+    if(strcmp(interprete,can->interprete) == 1)
         return 1;
     else
         return 0;
 }
 
-int indicadora3(cancion * can, char * genero)
+int indicadora3(cancion *can, char *genero)
 {
-    if(genero == can->genero)
+    if(strcmp(genero,can->genero) == 1)
         return 1;
     else
         return 0;
@@ -30,7 +31,7 @@ int indicadora3(cancion * can, char * genero)
 nodo * 
 busqueda(nodo * lista, int (*funcion) ())
 {
-    nodo * list = (nodo*) malloc(sizeof(nodo));
+    nodo *list = (nodo*) malloc(sizeof(nodo));
     while(lista != NULL)
     {
            
@@ -38,7 +39,8 @@ busqueda(nodo * lista, int (*funcion) ())
 }   
 
 void
-agregaLista(nodo * lista, char * dato)
+agregaLista(nodo *lista, cancion * ag)
 {
-    
+    if(lista->siguiente == NULL)
+        lista->siguiente = ag;                      
 }
