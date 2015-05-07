@@ -17,8 +17,7 @@ void leeArchivo(){
             //caracter = fgetc(archivo);
         	char *linea = readLine(archivo);
             if(caracter != '\377'){
-            
-
+          //reservamos espacio para los atributos de la cancion.
                 apuntador = strtok(linea,separador);
                 char *nombre = (*char)malloc(sizeof(char));
                 apuntador = strtok(linea,separador);
@@ -29,6 +28,7 @@ void leeArchivo(){
                 char *duracion =  (*char)malloc(sizeof(char));
                 apuntador = strtok(linea,separador);
                 char *anio = (*char)malloc(sizeof(char));
+                
                 }
                 else{
                     printf("%c",caracter);
