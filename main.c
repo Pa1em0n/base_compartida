@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include "leer.c"
+#include "busqueda.c"
 
 int main(int argc, char const *argv[])
 {
 	/* code */
 	char entrada;
+	//Hacemos un ciclo infinito para que se ejecute mientras haya cambios
 	while(1){
-		//printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		//Imprimimos la interfaz (menú)
+		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		printf("%s\n", "╔================================================╗");
 		printf("║\tHola Bienvenido A Tu Base De Datos\t ║\n");
 		printf("║\t\t\t\t\t\t ║\n");
@@ -16,11 +20,28 @@ int main(int argc, char const *argv[])
 		printf("║º i - Lista todas las canciones por intérprete  ║\n");
 		printf("║º s - Salir\t\t\t\t\t ║\n");	
 		printf("%s\n", "╚================================================╝");
-		printf("Introduce la opcion que deseas: \n");
+		//Solicitamos la acción que el usuario desea ejecutar
+		printf("Introduce la opción que deseas: \n");
+		//Leemos la entrada 
 		scanf("%c",&entrada);
-		if (entrada == 's'){
-			printf("Vuelve pronto XD\n");
-			break;
+		//Mandamos a llamar las funciones según la opción que haya ingresado el usuario
+		switch(entrada){
+
+			case 't':
+
+			case'a':
+
+			case'd':
+
+			case'g':
+
+			case'i':
+
+			case's':
+				printf("¡¡¡Te vemos pronto!!!");
+				return;	
+			default:
+				printf("Opción no válida");
 		}
 	}
 	return 0;
